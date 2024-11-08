@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "../styles/Countries.css";
+import Table from 'react-bootstrap/Table';
+import Button from 'react-bootstrap/Button';
+import Country from "./Country";
 
 function Countries() {
     const [countries, setCountries] = useState([]);
@@ -14,15 +18,12 @@ function Countries() {
     })
     }
     return (
-        <table>
-            <thead><tr><th>Name</th><th>Capital</th></tr></thead>
+        <Table striped bordered hover className={"countries"}>
+            <thead><tr><th>Name</th><th>Capital</th><th>Action</th></tr></thead>
             <tbody>
-                {countries.map(country => <tr>
-                    <td>{country.name.common}</td>
-                    <td>{country.capital}</td>
-                </tr>)}
+                {countries.map(country => <Country key={country.aplha3Code} country={country}/>)}
             </tbody>
-        </table>
+        </Table>
     )
 }
 
