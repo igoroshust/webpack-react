@@ -1,0 +1,15 @@
+header {
+    color: #e5bf00;
+    background-color: #353739;
+    font-size: 3rem;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .some-button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 2px solid tomato;
+}
