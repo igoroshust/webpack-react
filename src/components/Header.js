@@ -1,8 +1,7 @@
 import React, {Component, useState} from "react";
 import "../styles/Header.css";
 
-function Header() {
-    let buttonName = "Some button";
+function Header(props) {
     // let count = 0;
 
     /* setNewCount отвечает за изменение Count */
@@ -16,7 +15,7 @@ function Header() {
     return (
             <header>webpack-react
                 <button className={"some-button"} onClick={handleClick}>
-                {buttonName} clicked:{count} times</button>
+                {props.buttonName} clicked:{count} times</button>
             </header>
         )
 }

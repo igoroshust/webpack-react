@@ -3,3 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    text-align: center;
+}
+
+th {
+    font-weight: bold;
+}
+
+table {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}

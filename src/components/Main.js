@@ -1,16 +1,13 @@
 import React, {Component, Fragment, useState} from "react";
+import Countries from "./Countries";
 import "../styles/Main.css";
 
-class Main extends Component {
-    render() {
-        return (
-            <main>
-                <div>
-                    <h1>Hi there! d(~_-)b</h1>
-                </div>
-            </main>
-        )
-    }
+function Main () {
+    return (
+        <main>
+            <Countries />
+        </main>
+    )
 }
 
 export default Main;
