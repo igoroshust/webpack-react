@@ -1,20 +1,41 @@
-import React, {Component} from "react";
+import React, {Component, useState} from "react";
 import "../styles/Header.css";
 
-let buttonName = "Some button";
+function Header() {
+    let buttonName = "Some button";
+    // let count = 0;
 
-const handleClick = () => {
-    console.log('Вы кликнули по кнопке!');
-}
+    /* setNewCount отвечает за изменение Count */
+    let [count, setNewCount] = useState(0); /* 0 - значение по умолчанию переменной count */
 
-class Header extends Component {
-    render() {
-        return (
-            <header>This is header
-                <button className={"some-button"} onClick={handleClick}>{buttonName}</button>
+    const handleClick = () => {
+        setNewCount(count + 1);
+        console.log('Вы кликнули по кнопке!', count++);
+    }
+
+    return (
+            <header>webpack-react
+                <button className={"some-button"} onClick={handleClick}>
+                {buttonName} clicked:{count} times</button>
             </header>
         )
-    }
 }
+
+
+
+/* Вариант синтаксиса (устаревший) */
+//const handleClick = () => {
+//    console.log('Вы кликнули по кнопке!');
+//}
+//
+//class Header extends Component {
+//    render() {
+//        return (
+//            <header>This is header
+//                <button className={"some-button"} onClick={handleClick}>{buttonName}</button>
+//            </header>
+//        )
+//    }
+//}
 
 export default Header;

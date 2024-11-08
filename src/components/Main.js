@@ -1,4 +1,4 @@
-import React, {Component, Fragment} from "react";
+import React, {Component, Fragment, useState} from "react";
 import "../styles/Main.css";
 
 class Main extends Component {
@@ -6,7 +6,7 @@ class Main extends Component {
         return (
             <main>
                 <div>
-                    <h1>Hello World</h1>
+                    <h1>Hi there! d(~_-)b</h1>
                 </div>
             </main>
         )
