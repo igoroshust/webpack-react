@@ -15,7 +15,7 @@ function Header(props) {
     return (
             <header>webpack-react
                 <button className={"some-button"} onClick={handleClick}>
-                {props.buttonName} clicked:{count} times</button>
+                {props.buttonName} clicked {count} times</button>
             </header>
         )
 }
