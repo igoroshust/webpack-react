@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import * as React from "react";
 import axios from "axios";
 import "../styles/Countries.css";
 import Table from 'react-bootstrap/Table';
@@ -6,7 +6,7 @@ import Button from 'react-bootstrap/Button';
 import Country from "./Country";
 
 function Countries() {
-    const [countries, setCountries] = useState([]);
+    const [countries, setCountries] = React.useState([]);
 
      /* Присылаем страны, если их ещё не было */
     if(!countries.length) {

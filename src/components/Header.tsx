@@ -1,11 +1,11 @@
-import React, {Component, useState} from "react";
+import * as React from "react";
 import "../styles/Header.css";
 
 function Header(props) {
     // let count = 0;
 
     /* setNewCount отвечает за изменение Count */
-    let [count, setNewCount] = useState(0); /* 0 - значение по умолчанию переменной count */
+    let [count, setNewCount] = React.useState(0); /* 0 - значение по умолчанию переменной count */
 
     const handleClick = () => {
         setNewCount(count + 1);

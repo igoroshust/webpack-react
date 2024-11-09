@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import * as React from "react";
 import Button from "react-bootstrap/Button";
 import "../styles/Country.css";
 import PropTypes from "prop-types";
 
 
 function Country(props) {
-    const [selected, changeSelected] = useState(false);
+    const [selected, changeSelected] = React.useState(false);
 
     return (
         <tr className={ selected ? "selected-country": ""}>

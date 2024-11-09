@@ -1,4 +1,4 @@
-import React, {Component, Fragment, useState} from "react";
+import * as React from "react";
 import Countries from "./Countries";
 import "../styles/Main.css";
 
