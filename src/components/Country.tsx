@@ -4,13 +4,13 @@ import "../styles/Country.css";
 import PropTypes from "prop-types";
 
 
-function Country(props) {
+function Country({name, capital}) {
     const [selected, changeSelected] = React.useState(false);
 
     return (
         <tr className={ selected ? "selected-country": ""}>
-            <td>{props.name}</td>
-            <td>{props.capital}</td>
+            <td>{name}</td>
+            <td>{capital}</td>
             <td>
                 { selected ?
                     <Button variant="danger" onClick={() => changeSelected(false)}>Remove</Button> :
